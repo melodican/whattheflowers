@@ -171,7 +171,7 @@ function buildPage(occ, area) {
   const seed = occ.slug + area.slug;
   const title = `${occ.name} in ${area.name} | ${cfg.businessName} Blackpool`;
   const description = fill(
-    `Fresh ${occ.short} hand-tied in Blackpool and delivered to ${area.name} (${area.postcodes}). Order online or call ${cfg.phone}. Same-day available — order by ${cfg.cutOffTime}.`,
+    `Fresh ${occ.short} made in Blackpool and delivered to ${area.name} (${area.postcodes}) in our signature display box. Order online or call ${cfg.phone}. Same-day available — order by ${cfg.cutOffTime}.`,
     area
   );
   const canonical = url(occ, area);
@@ -208,7 +208,7 @@ function buildPage(occ, area) {
     ${occ.bouquets
       .map(
         (b) => `<div class="card"><h3>${esc(b)}</h3>
-        <p style="margin:0;color:var(--muted)">Hand-tied fresh to order.</p></div>`
+        <p style="margin:0;color:var(--muted)">Made fresh, boxed ready to display.</p></div>`
       )
       .join("\n    ")}
   </div>
@@ -220,7 +220,7 @@ function buildPage(occ, area) {
   <ul class="ticks">
     <li><strong>Bold, vivid, unmistakably WTF!</strong> We do bright, funky and full-of-attitude — flowers people actually stop and stare at.</li>
     <li><strong>Same-day delivery to ${esc(area.name)}.</strong> Order by ${esc(cfg.cutOffTime)}, ${esc(DAYS)}, and we'll deliver today (${esc(area.note)}).</li>
-    <li><strong>Hand-tied in Blackpool.</strong> Every bouquet is made by us on ${esc(cfg.addressStreet)} — never boxed in a warehouse.</li>
+    <li><strong>Made fresh in Blackpool.</strong> Every vibe is made by us on ${esc(cfg.addressStreet)} and comes in our signature display box, ready to show off — never mass-produced in a warehouse.</li>
     <li><strong>A handwritten card, free.</strong> Add your message at checkout and we'll write it by hand.</li>
   </ul>
 </div></section>
@@ -304,7 +304,7 @@ function buildIndex() {
   <div class="wrap">
   <p class="eyebrow">Blackpool &amp; the Fylde coast</p>
   <h1>Flowers with attitude,<br>delivered same-day</h1>
-  <p class="lede">${esc(cfg.tagline)} on ${esc(cfg.addressStreet)}. Bright, bold, hand-tied bouquets for every occasion. ${esc(cfg.slogan)}</p>
+  <p class="lede">${esc(cfg.tagline)} on ${esc(cfg.addressStreet)}. Bright, bold flowers for every occasion, boxed ready to display. ${esc(cfg.slogan)}</p>
   <div class="cta-row">
     <a class="btn btn-primary" href="${esc(cfg.orderUrl)}">Order online</a>
     <a class="btn btn-ghost" href="tel:${esc(cfg.phoneLink)}">Call ${esc(cfg.phone)}</a>
@@ -342,7 +342,7 @@ ${occasions
 
   return page({
     title: `${cfg.businessName} — Flower Delivery in Blackpool & the Fylde Coast`,
-    description: `Local Blackpool florist on ${cfg.addressStreet}. Same-day hand-tied flowers delivered across Blackpool, Cleveleys, Poulton, Lytham St Annes and more. Order online or call ${cfg.phone}.`,
+    description: `Local Blackpool florist on ${cfg.addressStreet}. Same-day flowers in our signature display box, delivered across Blackpool, Cleveleys, Poulton, Lytham St Annes and more. Order online or call ${cfg.phone}.`,
     canonical: `${cfg.siteUrl}/index.html`,
     body,
     jsonld,
