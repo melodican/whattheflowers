@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Find your WTF! Moment — What The Flowers, Blackpool</title>
+<meta name="description" content="Answer four quick questions and we'll match you with the perfect bright, bold bouquet — hand-tied in Blackpool and delivered same-day.">
+<style>
+/* ---- WTF! : neon on black. A deliberate single-theme visual world. ---- */
+:root{
+  --bg:#0b0b0f; --panel:#15151d; --ink:#ffffff; --muted:#9a9aa8;
+  --pink:#ff1f8e; --yellow:#ffe500; --cyan:#1fc8dd; --orange:#ff7a1a; --line:#2a2a38;
+  --display:"Arial Black","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);
+  background:
+    radial-gradient(700px 380px at 12% -8%, rgba(255,31,142,.30), transparent 70%),
+    radial-gradient(680px 380px at 92% 6%, rgba(31,200,221,.26), transparent 70%),
+    radial-gradient(600px 400px at 60% 108%, rgba(255,229,0,.16), transparent 70%),
+    var(--bg);
+  font:400 17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  display:flex;align-items:center;justify-content:center;padding:26px 15px}
+.stage{width:100%;max-width:600px}
+.brand{text-align:center;margin-bottom:16px}
+.wtf{font-family:var(--display);font-weight:900;font-style:italic;font-size:2.1rem;letter-spacing:-.03em}
+.wtf .w{color:var(--pink)}.wtf .t{color:var(--cyan)}.wtf .f{color:var(--yellow)}.wtf .b{color:var(--orange)}
+.brand .loc{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;
+  padding:32px 30px;position:relative;overflow:hidden;
+  box-shadow:0 26px 60px -30px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.02) inset}
+@media (max-width:480px){.card{padding:24px 18px}}
+
+.progress{display:flex;gap:7px;margin-bottom:22px}
+.progress i{height:6px;flex:1;border-radius:99px;background:#2c2c3a;transition:background .3s,transform .3s}
+.progress i.on{background:linear-gradient(90deg,var(--pink),var(--orange))}
+
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--yellow);font-weight:800;margin:0 0 10px}
+h1{font-family:var(--display);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;
+  line-height:1.02;font-size:clamp(1.7rem,5.2vw,2.5rem);margin:0 0 8px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 24px}
+
+.opts{display:grid;gap:11px}
+.opt{display:flex;align-items:center;gap:14px;width:100%;text-align:left;cursor:pointer;
+  background:#101018;border:2px solid var(--line);border-radius:15px;
+  padding:15px 17px;font:inherit;color:var(--ink);transition:border-color .14s,transform .08s,background .14s}
+.opt:hover{border-color:var(--pink);background:#17121a}
+.opt:active{transform:scale(.99)}
+.opt:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+.opt .ic{flex:0 0 42px;height:42px;display:grid;place-items:center;border-radius:11px;
+  background:#0b0b0f;border:2px solid var(--pink);color:var(--pink)}
+.opt:nth-child(3n+2) .ic{border-color:var(--cyan);color:var(--cyan)}
+.opt:nth-child(3n) .ic{border-color:var(--yellow);color:var(--yellow)}
+.opt .ic svg{width:23px;height:23px}
+.opt .tx b{display:block;font-weight:800;letter-spacing:.01em}
+.opt .tx span{font-size:.9rem;color:var(--muted)}
+
+.nav{display:flex;justify-content:space-between;align-items:center;margin-top:22px;min-height:24px}
+.back{background:none;border:0;color:var(--muted);cursor:pointer;font:inherit;font-size:.94rem;padding:4px;text-transform:uppercase;letter-spacing:.05em;font-weight:700}
+.back:hover{color:var(--yellow)}
+.count{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.08em}
+
+/* results */
+.rec{display:flex;gap:15px;align-items:flex-start;border:2px solid var(--line);border-radius:16px;
+  padding:15px;background:#101018;margin-bottom:12px}
+.rec:nth-child(2){border-color:var(--pink)}
+.rec:nth-child(3){border-color:var(--cyan)}
+.rec:nth-child(4){border-color:var(--yellow)}
+.rec .art{flex:0 0 72px;height:84px;border-radius:11px;overflow:hidden;display:block}
+.rec .art svg{width:100%;height:100%;display:block}
+.rec .body{flex:1;min-width:0}
+.rec h3{font-family:var(--display);text-transform:uppercase;letter-spacing:-.01em;margin:0 0 3px;font-size:1.06rem;line-height:1.1}
+.rec .price{color:var(--yellow);font-weight:800;font-size:.92rem}
+.rec p{margin:6px 0 0;font-size:.92rem;color:var(--muted)}
+.pill{display:inline-block;margin-top:9px;font-size:.72rem;font-weight:800;text-transform:uppercase;
+  letter-spacing:.06em;color:#0b0b0f;background:var(--cyan);border-radius:99px;padding:3px 10px}
+.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:22px}
+.btn{flex:1;min-width:150px;text-align:center;text-decoration:none;font:inherit;font-weight:800;
+  text-transform:uppercase;letter-spacing:.04em;padding:15px 20px;border-radius:99px;cursor:pointer;border:2.5px solid transparent}
+.btn-primary{background:var(--pink);color:#fff}
+.btn-primary:hover{background:var(--yellow);color:#0b0b0f}
+.btn-ghost{background:transparent;color:#fff;border-color:#fff}
+.btn-ghost:hover{background:#fff;color:#0b0b0f}
+.restart{display:block;margin:16px auto 0;background:none;border:0;color:var(--muted);
+  cursor:pointer;font:inherit;font-size:.86rem;text-decoration:underline;text-transform:uppercase;letter-spacing:.05em}
+.fade{animation:fade .34s ease}
+@keyframes fade{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.fade{animation:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="brand">
+    <span class="wtf"><span class="w">W</span><span class="t">T</span><span class="f">F</span><span class="b">!</span></span>
+    <div class="loc">What The Flowers · Blackpool</div>
+  </div>
+  <div class="card" id="card" aria-live="polite"></div>
+</div>
+
+<script>
+/* ------------------------------------------------------------------ *
+ *  EDIT THESE to point at your shop and phone number.                *
+ * ------------------------------------------------------------------ */
+const ORDER_URL = "https://www.whattheflowers.co.uk/";
+const PHONE     = "01253 366050";
+const PHONE_TEL = "+441253366050";
+
+/* --- vivid tropical flower marks (inline SVG, CSP-safe) ------------ */
+function bloom(h){ // h = hue
+  return `<svg viewBox="0 0 100 100" role="img" aria-hidden="true">
+    <rect width="100" height="100" fill="hsl(${h},70%,10%)"/>
+    <g transform="translate(50 52)">
+      ${[0,45,90,135,180,225,270,315].map(a=>`<ellipse cx="0" cy="-20" rx="9" ry="21"
+        fill="hsl(${h},95%,${a%90===0?64:56}%)" transform="rotate(${a})"/>`).join("")}
+      <circle r="12" fill="hsl(${(h+45)%360},100%,58%)"/>
+      <circle r="5" fill="hsl(${(h+180)%360},95%,55%)"/>
+    </g>
+  </svg>`;
+}
+
+const ICONS = {
+  heart:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-9.3-8.5C1 8 2.5 5 5.5 5 8 5 12 8 12 8s4-3 6.5-3c3 0 4.5 3 2.8 6.5C19 15.5 12 20 12 20z"/></svg>',
+  cake:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M5 20v-6a3 3 0 013-3h8a3 3 0 013 3v6M12 8V5m0 3l2-2"/></svg>',
+  sun:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M6 6l1.5 1.5M18 18l-1.5-1.5M6 18l1.5-1.5M18 6l-1.5 1.5"/></svg>',
+  dove:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14c4 0 6-2 8-6 1 3 3 4 6 4-1 4-5 6-9 6-3 0-5-2-5-4z"/></svg>',
+  baby:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/></svg>',
+  star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.9 6.8 19l1-5.8L3.6 9.1l5.8-.8L12 3z"/></svg>',
+  gift:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="9" width="16" height="11" rx="1"/><path d="M4 13h16M12 9v11M12 9S9 4 7 6s2 3 5 3c3 0 7 0 5-3s-5 3-5 3z"/></svg>',
+  cash:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>',
+  fire:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3s5 4 5 9a5 5 0 01-10 0c0-2 1-3 1-3s0 2 2 2c1.5 0 1.5-2 1-4-.4-1.6 1-4 1-4z"/></svg>',
+  bolt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg>'
+};
+
+const QUESTIONS = [
+  { key:"who", eyebrow:"Question 1 / 4", q:"Who's getting the WTF! moment?",
+    sub:"We'll match the flowers to them.",
+    opts:[
+      {v:"partner", ic:"heart", b:"My other half", s:"Romance & anniversaries"},
+      {v:"family",  ic:"cake",  b:"Family or a mate", s:"Birthdays, thank-yous, just because"},
+      {v:"sympathy",ic:"dove",  b:"A sympathy gift", s:"Funeral & condolence flowers"},
+      {v:"baby",    ic:"baby",  b:"A brand-new arrival", s:"Congratulate the new baby"},
+      {v:"business",ic:"gift",  b:"A business or colleague", s:"Corporate & well done"}
+    ]},
+  { key:"occasion", eyebrow:"Question 2 / 4", q:"What's the occasion?",
+    sub:"Pick the closest one.",
+    opts:[
+      {v:"birthday",ic:"cake", b:"Birthday"},
+      {v:"anniversary",ic:"heart", b:"Anniversary"},
+      {v:"romance",ic:"fire", b:"Romance / I love you"},
+      {v:"getwell",ic:"sun", b:"Get well soon"},
+      {v:"congrats",ic:"star", b:"Congratulations"},
+      {v:"thanks",ic:"gift", b:"A big thank you"},
+      {v:"sympathy",ic:"dove", b:"Sympathy / funeral"},
+      {v:"justbecause",ic:"bolt", b:"Just because"}
+    ]},
+  { key:"budget", eyebrow:"Question 3 / 4", q:"What's the damage?",
+    sub:"Every size is hand-tied and unmistakably WTF!.",
+    opts:[
+      {v:"low", ic:"cash", b:"Up to £30", s:"A cheeky little posy"},
+      {v:"mid", ic:"cash", b:"£30 – £50", s:"Our most popular"},
+      {v:"high",ic:"fire", b:"£50 and up", s:"Go big or go home"}
+    ]},
+  { key:"colour", eyebrow:"Question 4 / 4", q:"Pick your vibe",
+    sub:"Or unleash the florist.",
+    opts:[
+      {v:"bright", ic:"bolt", b:"Loud & tropical"},
+      {v:"pastel", ic:"heart", b:"Soft & pretty"},
+      {v:"romantic",ic:"fire", b:"Reds & hot pinks"},
+      {v:"white",  ic:"star", b:"Sleek whites & greens"},
+      {v:"florist",ic:"gift", b:"Surprise me — florist's choice"}
+    ]}
+];
+
+/* --- bouquet catalogue (edit names/prices to match your shop) ------ */
+const CATALOGUE = [
+  {name:"Tropical Riot Hand-Tied", hue:320, min:35, tags:["bright","florist","partner","family","birthday","congrats","justbecause"], blurb:"Sunflowers, anthuriums and hot-pink blooms in a full-on tropical explosion."},
+  {name:"Hot Pink Knockout", hue:330, min:35, tags:["bright","romantic","romance","partner","anniversary","birthday"], blurb:"Electric pinks and cerise that walk into the room before you do."},
+  {name:"Classic Dozen Red Roses", hue:352, min:35, tags:["romantic","romance","partner","anniversary"], blurb:"Twelve velvety reds — a classic, done the WTF! way."},
+  {name:"Neon Birthday Bomb + Balloon", hue:290, min:38, tags:["bright","birthday","family","congrats"], blurb:"A riot of colour with a foil balloon — an instant party on the doorstep."},
+  {name:"Sunshine Get-Well Bouquet", hue:45, min:28, tags:["bright","getwell","family","justbecause"], blurb:"Zingy yellows and oranges guaranteed to lift the mood."},
+  {name:"Pastel Punch Posy", hue:300, min:26, tags:["pastel","family","baby","thanks","justbecause"], blurb:"Soft pinks and lilacs — pretty, but with a WTF! kick."},
+  {name:"New Baby Brights", hue:200, min:30, tags:["baby","pastel","congrats"], blurb:"Cheerful, colourful blooms to welcome the new arrival in style."},
+  {name:"Sleek White & Green Statement", hue:150, min:40, tags:["white","sympathy","thanks","business"], blurb:"Crisp whites and architectural greens — bold, clean, striking."},
+  {name:"Sympathy Tribute, Beautifully Bold", hue:160, min:35, tags:["white","sympathy"], blurb:"A respectful tribute with real presence — delivered with care."},
+  {name:"The Showstopper (Luxury Grand)", hue:335, min:60, tags:["high","bright","romantic","business","anniversary","congrats","thanks"], blurb:"Our biggest, boldest, most extra arrangement of the season's finest."},
+  {name:"Florist's Choice — Full Send", hue:270, min:25, tags:["florist","bright","family","justbecause","thanks","getwell","birthday"], blurb:"Hand us the reins and we'll go all-out with the day's freshest, funkiest stems."},
+  {name:"Congrats Confetti Blooms", hue:50, min:45, tags:["congrats","business","bright"], blurb:"Golds, brights and pops of colour for life's big wins."}
+];
+
+const budgetBand = { low:[0,32], mid:[30,52], high:[50,999] };
+
+function recommend(a){
+  const [bmin,bmax] = budgetBand[a.budget] || [0,999];
+  return CATALOGUE.map(item=>{
+    let score = 0;
+    if(item.tags.includes(a.colour)) score += 3;
+    if(item.tags.includes(a.occasion)) score += 3;
+    if(item.tags.includes(a.who)) score += 2;
+    if(a.budget==="high" && item.tags.includes("high")) score += 2;
+    if(item.min >= bmin-2 && item.min <= bmax) score += 2;
+    else if(item.min > bmax) score -= 3;
+    return {item, score};
+  })
+  .sort((x,y)=> y.score - x.score || x.item.min - y.item.min)
+  .slice(0,3)
+  .map(r=>r.item);
+}
+
+const answers = {};
+let step = 0;
+const card = document.getElementById("card");
+
+function render(){
+  if(step >= QUESTIONS.length){ renderResults(); return; }
+  const Q = QUESTIONS[step];
+  card.className = "card fade";
+  card.innerHTML = `
+    <div class="progress">${QUESTIONS.map((_,i)=>`<i class="${i<=step?"on":""}"></i>`).join("")}</div>
+    <p class="eyebrow">${Q.eyebrow}</p>
+    <h1>${Q.q}</h1>
+    <p class="sub">${Q.sub}</p>
+    <div class="opts" role="list">
+      ${Q.opts.map(o=>`
+        <button class="opt" role="listitem" data-v="${o.v}">
+          <span class="ic">${ICONS[o.ic]||""}</span>
+          <span class="tx"><b>${o.b}</b>${o.s?`<span>${o.s}</span>`:""}</span>
+        </button>`).join("")}
+    </div>
+    <div class="nav">
+      ${step>0?'<button class="back" id="back">← Back</button>':'<span></span>'}
+      <span class="count">${step+1} OF ${QUESTIONS.length}</span>
+    </div>`;
+  card.querySelectorAll(".opt").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      answers[Q.key] = btn.dataset.v;
+      step++; render();
+    });
+  });
+  const back = document.getElementById("back");
+  if(back) back.addEventListener("click",()=>{ step--; render(); });
+}
+
+function renderResults(){
+  const recs = recommend(answers);
+  card.className = "card fade";
+  card.innerHTML = `
+    <p class="eyebrow">Hand-picked for you</p>
+    <h1>Your WTF! matches</h1>
+    <p class="sub">Based on your answers — all hand-tied in Blackpool and delivered same-day when you order by 2pm.</p>
+    ${recs.map(r=>`
+      <div class="rec">
+        <span class="art">${bloom(r.hue)}</span>
+        <div class="body">
+          <h3>${r.name}</h3>
+          <span class="price">From £${r.min}</span>
+          <p>${r.blurb}</p>
+          <span class="pill">Same-day ✦ order by 2pm</span>
+        </div>
+      </div>`).join("")}
+    <div class="actions">
+      <a class="btn btn-primary" href="${ORDER_URL}" target="_blank" rel="noopener">Order online</a>
+      <a class="btn btn-ghost" href="tel:${PHONE_TEL}">Call ${PHONE}</a>
+    </div>
+    <button class="restart" id="restart">Start again</button>`;
+  document.getElementById("restart").addEventListener("click",()=>{
+    step=0; for(const k in answers) delete answers[k]; render();
+  });
+}
+
+render();
+</script>
+</body>
+</html>

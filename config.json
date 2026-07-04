@@ -1,0 +1,19 @@
+{
+  "businessName": "What The Flowers",
+  "brandShort": "WTF!",
+  "tagline": "Blackpool's boldest florist",
+  "slogan": "Whatever the occasion — make it a WTF! Moment.",
+  "phone": "01253 366050",
+  "phoneLink": "+441253366050",
+  "instagram": "@ukwhattheflowers",
+  "addressStreet": "Mowbray Drive",
+  "addressLocality": "Blackpool",
+  "addressRegion": "Lancashire",
+  "addressPostcode": "FY3 7HW",
+  "orderUrl": "https://www.whattheflowers.co.uk/",
+  "siteUrl": "https://flowers.whattheflowers.co.uk",
+  "email": "hello@whattheflowers.co.uk",
+  "openingHours": "Mon-Sat 09:00-17:00",
+  "cutOffTime": "2pm",
+  "deliveryFeeFrom": "3.99"
+}

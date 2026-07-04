@@ -1,0 +1,20 @@
+[
+  { "slug": "blackpool",        "name": "Blackpool",          "postcodes": "FY1, FY2, FY3, FY4", "note": "from the Promenade and Tower to the quieter streets inland" },
+  { "slug": "bispham",          "name": "Bispham",            "postcodes": "FY2",               "note": "including Red Bank Road and the cliffs" },
+  { "slug": "layton",           "name": "Layton",             "postcodes": "FY3",               "note": "just up the road from our Mowbray Drive shop" },
+  { "slug": "marton",           "name": "Marton",             "postcodes": "FY3, FY4",          "note": "around Stanley Park and the lake" },
+  { "slug": "south-shore",      "name": "South Shore",        "postcodes": "FY4",               "note": "near the Pleasure Beach and Squires Gate" },
+  { "slug": "cleveleys",        "name": "Cleveleys",          "postcodes": "FY5",               "note": "along the seafront and Victoria Road West" },
+  { "slug": "thornton",         "name": "Thornton",           "postcodes": "FY5",               "note": "including Thornton-Cleveleys and Marsh Mill" },
+  { "slug": "poulton-le-fylde", "name": "Poulton-le-Fylde",   "postcodes": "FY6",               "note": "around the historic Market Place" },
+  { "slug": "st-annes",         "name": "St Annes",           "postcodes": "FY8",               "note": "Lytham St Annes and the square" },
+  { "slug": "lytham",           "name": "Lytham",             "postcodes": "FY8",               "note": "by the green and the windmill" },
+  { "slug": "fleetwood",        "name": "Fleetwood",          "postcodes": "FY7",               "note": "up to the ferry and the market" },
+  { "slug": "anchorsholme",     "name": "Anchorsholme",       "postcodes": "FY5",               "note": "on the Blackpool–Cleveleys border" },
+  { "slug": "norbreck",         "name": "Norbreck",           "postcodes": "FY2, FY5",          "note": "near the Norbreck Castle" },
+  { "slug": "grange-park",      "name": "Grange Park",        "postcodes": "FY3",               "note": "a short hop from our shop" },
+  { "slug": "mereside",         "name": "Mereside",           "postcodes": "FY4",               "note": "near Blackpool Victoria Hospital" },
+  { "slug": "staining",         "name": "Staining",           "postcodes": "FY3",               "note": "the village east of Blackpool" },
+  { "slug": "carleton",         "name": "Carleton",           "postcodes": "FY6",               "note": "between Poulton and Blackpool" },
+  { "slug": "squires-gate",     "name": "Squires Gate",       "postcodes": "FY4, FY8",          "note": "by Blackpool Airport" }
+]

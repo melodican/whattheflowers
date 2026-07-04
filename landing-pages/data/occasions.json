@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "same-day-flowers",
+    "name": "Same-Day Flower Delivery",
+    "short": "same-day flowers",
+    "keyword": "same day flower delivery",
+    "intro": "Need flowers today? Order before {cutOff} and we'll hand-tie a fresh bouquet in our Blackpool shop and get it to {area} the very same day.",
+    "bouquets": ["Florist's Choice Hand-Tied", "Seasonal Market Bouquet", "Classic Dozen Roses", "Bright & Cheerful Posy"],
+    "faqs": [
+      ["How late can I order for same-day delivery to {area}?", "Order by {cutOff}, {days}, and we'll deliver to {area} the same day."],
+      ["Can I add a card message?", "Yes — add your message at checkout and we'll handwrite it on a card, free of charge."]
+    ]
+  },
+  {
+    "slug": "birthday-flowers",
+    "name": "Birthday Flowers",
+    "short": "birthday flowers",
+    "keyword": "birthday flowers",
+    "intro": "Make someone's day in {area} with a fresh, hand-tied birthday bouquet — bright, seasonal and delivered with a smile.",
+    "bouquets": ["Bright Birthday Hand-Tied", "Balloon & Blooms Gift Set", "Luxury Birthday Bouquet", "Their Favourite Colours Posy"],
+    "faqs": [
+      ["Can you deliver birthday flowers on a specific day?", "Yes — choose your delivery date at checkout and we'll make sure the birthday flowers arrive in {area} on the day."],
+      ["Do you include a vase?", "You can add a gift vase, chocolates or a balloon to any birthday order."]
+    ]
+  },
+  {
+    "slug": "anniversary-flowers",
+    "name": "Anniversary Flowers",
+    "short": "anniversary flowers",
+    "keyword": "anniversary flowers",
+    "intro": "Celebrate the years together with romantic anniversary flowers, hand-arranged in Blackpool and delivered to {area}.",
+    "bouquets": ["Romantic Red Roses", "Elegant Rose & Lily Bouquet", "Luxury Anniversary Hand-Tied", "Pastel Romance Posy"],
+    "faqs": [
+      ["Can I send anniversary flowers anonymously or with a special message?", "Of course — tell us what to write and we'll handwrite your card for delivery in {area}."],
+      ["Do you do luxury anniversary bouquets?", "Yes, we offer premium and grand sizes for a real 'wow' on the doorstep."]
+    ]
+  },
+  {
+    "slug": "funeral-flowers",
+    "name": "Funeral & Sympathy Flowers",
+    "short": "funeral and sympathy flowers",
+    "keyword": "funeral flowers",
+    "intro": "In difficult times we're here to help. We create respectful funeral tributes and sympathy flowers in Blackpool, with careful delivery to homes and funeral directors across {area}.",
+    "bouquets": ["Sympathy Hand-Tied", "Lettered Tributes (MUM, DAD, NAN)", "Casket & Coffin Sprays", "Funeral Wreaths & Posies"],
+    "faqs": [
+      ["Can you deliver to a funeral director in {area}?", "Yes — give us the funeral director's details and the service time and we'll deliver the tribute in good time."],
+      ["Can we discuss a bespoke tribute?", "Please call us on {phone}. We'll talk through wording, flowers and colours with care."]
+    ]
+  },
+  {
+    "slug": "wedding-flowers",
+    "name": "Wedding Flowers",
+    "short": "wedding flowers",
+    "keyword": "wedding florist",
+    "intro": "From bridal bouquets to buttonholes and venue styling, we're a Blackpool wedding florist creating flowers couples remember — for weddings across {area} and the Fylde coast.",
+    "bouquets": ["Bridal Bouquets", "Bridesmaid Posies", "Buttonholes & Corsages", "Ceremony & Table Arrangements"],
+    "faqs": [
+      ["How far ahead should we book wedding flowers?", "As early as you can — pop in or call {phone} to arrange a free consultation for your {area} wedding."],
+      ["Do you deliver and set up at the venue?", "Yes, we deliver and style at venues across {area} and the surrounding Fylde coast."]
+    ]
+  },
+  {
+    "slug": "new-baby-flowers",
+    "name": "New Baby Flowers",
+    "short": "new baby flowers",
+    "keyword": "new baby flowers",
+    "intro": "Welcome a new arrival in {area} with soft, cheerful new baby flowers, hand-tied and delivered fresh from our Blackpool shop.",
+    "bouquets": ["Baby Girl Pinks", "Baby Boy Blues", "Neutral New Baby Posy", "Flowers & Balloon Gift Set"],
+    "faqs": [
+      ["Can you deliver to the maternity ward at Blackpool Victoria?", "We can deliver to homes in {area}; for hospital wards please check the ward's flower policy first, or send to the family home."],
+      ["Can I add a soft toy or balloon?", "Yes — add a balloon or gift at checkout to complete the new baby surprise."]
+    ]
+  },
+  {
+    "slug": "get-well-flowers",
+    "name": "Get Well Flowers",
+    "short": "get well flowers",
+    "keyword": "get well flowers",
+    "intro": "Send a little brightness to someone under the weather in {area} with cheerful get well flowers, hand-tied in Blackpool.",
+    "bouquets": ["Sunshine Yellow Hand-Tied", "Bright & Cheerful Posy", "Get Well Gift Set", "Seasonal Pick-Me-Up"],
+    "faqs": [
+      ["Can you deliver get well flowers the same day in {area}?", "Yes — order by {cutOff} and we'll deliver to {area} the same day."],
+      ["Can I keep it small and simple?", "Absolutely — we do lovely posy sizes as well as larger bouquets."]
+    ]
+  },
+  {
+    "slug": "romantic-flowers",
+    "name": "Roses & Romantic Flowers",
+    "short": "roses and romantic flowers",
+    "keyword": "roses delivered",
+    "intro": "Say it with roses. From a single stem to a luxury dozen, we deliver romantic flowers across {area}, hand-tied fresh in Blackpool.",
+    "bouquets": ["Classic Red Roses", "Rose & Freesia Bouquet", "Luxury Romance Hand-Tied", "Valentine's Specials"],
+    "faqs": [
+      ["Can you deliver roses on Valentine's Day in {area}?", "Yes — Valentine's is our busiest day, so please order early for delivery in {area}."],
+      ["Do you do single roses and grand bouquets?", "Both — from a single presentation rose to a hundred-rose showstopper."]
+    ]
+  },
+  {
+    "slug": "congratulations-flowers",
+    "name": "Congratulations Flowers",
+    "short": "congratulations flowers",
+    "keyword": "congratulations flowers",
+    "intro": "New job, new home, exam results or good news — celebrate it with congratulations flowers delivered to {area}, hand-tied in Blackpool.",
+    "bouquets": ["Bright Celebration Hand-Tied", "Champagne & Blooms Gift Set", "New Home Bouquet", "Well Done Posy"],
+    "faqs": [
+      ["Can I send congratulations flowers to a workplace in {area}?", "Yes — give us the business name and address and we'll deliver during opening hours."],
+      ["Can you match their colours or theme?", "Tell us the occasion and we'll pick blooms to suit."]
+    ]
+  },
+  {
+    "slug": "thank-you-flowers",
+    "name": "Thank You Flowers",
+    "short": "thank you flowers",
+    "keyword": "thank you flowers",
+    "intro": "Say thank you properly with a fresh hand-tied bouquet delivered to {area}, arranged with care in our Blackpool shop.",
+    "bouquets": ["Thank You Hand-Tied", "Seasonal Market Bouquet", "Pastel Posy", "Luxury Thank You Bouquet"],
+    "faqs": [
+      ["Can you deliver thank you flowers the same day?", "Yes — order by {cutOff} for same-day delivery to {area}."],
+      ["Can I send flowers without a big fuss?", "A simple posy with a handwritten card says it perfectly — we'll take care of it."]
+    ]
+  }
+]
