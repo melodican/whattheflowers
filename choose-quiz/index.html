@@ -182,13 +182,13 @@ const QUESTIONS = [
  *         (b) a file next to this page   -> "images/pink.jpg"
  *         Left empty, it falls back to the coloured flower graphic.       */
 const VIBES = [
-  {name:"Pink Vibe",     hue:330, price:null, img:"", tags:["pink","romance","anniversary","birthday","partner","family","thanks","justbecause"], blurb:"All pink everything — girly, playful and impossible to ignore."},
-  {name:"Carnival Vibe", hue:300, price:null, img:"", tags:["bright","birthday","congrats","justbecause","business","partner","family"], blurb:"A riot of colour — loud, bold and full-on fun."},
-  {name:"Sunshine Vibe", hue:46,  price:null, img:"", tags:["bright","getwell","thanks","justbecause","congrats","family","birthday"], blurb:"Zingy yellows and warm brights that instantly lift the mood."},
-  {name:"Mono Vibe",     hue:150, price:null, img:"", tags:["white","sympathy","business","thanks","anniversary","statement"], blurb:"Sleek whites and fresh greens — cool, clean and seriously striking."},
-  {name:"Amethyst Vibe", hue:275, price:null, img:"", tags:["pastel","anniversary","thanks","justbecause","family","romance","partner","baby"], blurb:"Rich purples and lilacs — a little bit luxe, a little bit dreamy."}
+  {name:"Pink Vibe",     hue:330, price:"From £35", img:"", tags:["pink","romance","anniversary","birthday","partner","family","thanks","justbecause"], blurb:"All pink everything — girly, playful and impossible to ignore."},
+  {name:"Carnival Vibe", hue:300, price:"From £35", img:"", tags:["bright","birthday","congrats","justbecause","business","partner","family"], blurb:"A riot of colour — loud, bold and full-on fun."},
+  {name:"Sunshine Vibe", hue:46,  price:"From £35", img:"", tags:["bright","getwell","thanks","justbecause","congrats","family","birthday"], blurb:"Zingy yellows and warm brights that instantly lift the mood."},
+  {name:"Mono Vibe",     hue:150, price:"From £35", img:"", tags:["white","sympathy","business","thanks","anniversary","statement"], blurb:"Sleek whites and fresh greens — cool, clean and seriously striking."},
+  {name:"Amethyst Vibe", hue:275, price:"From £35", img:"", tags:["pastel","anniversary","thanks","justbecause","family","romance","partner","baby"], blurb:"Rich purples and lilacs — a little bit luxe, a little bit dreamy."}
 ];
-const SPOTLIGHT = {name:"This Month's Spotlight", hue:190, price:null, img:"", tags:["florist","surprise","justbecause","congrats","getwell","thanks","bright"], blurb:"Our featured seasonal showstopper — hand us the reins and we'll make it unforgettable."};
+const SPOTLIGHT = {name:"This Month's Spotlight", hue:190, price:"From £35", img:"", tags:["florist","surprise","justbecause","congrats","getwell","thanks","bright"], blurb:"Our featured seasonal showstopper — hand us the reins and we'll make it unforgettable."};
 
 function recommend(a){
   const pool = [...VIBES, SPOTLIGHT];
